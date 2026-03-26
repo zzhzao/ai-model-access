@@ -1,0 +1,3 @@
+/home/zzh/ai-model/ai-model-access/AIModelAccess/test/build/CMakeFiles/testLLM.dir
+/home/zzh/ai-model/ai-model-access/AIModelAccess/test/build/CMakeFiles/edit_cache.dir
+/home/zzh/ai-model/ai-model-access/AIModelAccess/test/build/CMakeFiles/rebuild_cache.dir

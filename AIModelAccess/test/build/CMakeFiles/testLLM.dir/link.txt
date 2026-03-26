@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/testLLM.dir/testLLM.cpp.o "CMakeFiles/testLLM.dir/home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp.o" "CMakeFiles/testLLM.dir/home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp.o" -o testLLM  -ljsoncpp -lspdlog -lgtest /usr/lib/x86_64-linux-gnu/libssl.so /usr/lib/x86_64-linux-gnu/libcrypto.so 

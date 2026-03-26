@@ -28,7 +28,7 @@ namespace util_log{
             }
             else
             {
-                _logger = spdlog::basic_logger_mt<spdlog::async_logger>(loggerName, loggerFile);
+                _logger = spdlog::basic_logger_mt<spdlog::async_factory>(loggerName, loggerFile);
             }
           
             // %n 日志名称
