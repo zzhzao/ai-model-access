@@ -27,16 +27,16 @@ namespace ai_chat_sdk{
         }
 
         //初始化 Base URL
-        it = modelconfig.find("_baseUrl");
+        it = modelconfig.find("endpoint");
         if(it == modelconfig.end())
         {
-            ERR("DeepSeekProvider initModel: _baseUrl not found");
+            ERR("DeepSeekProvider initModel: endpoint not found");
             return false;
         }
         else{
             _endpoint = it->second;
         }
-        INFO("DeepSeekProvider initModel: _baseUrl = {}", _endpoint.c_str());
+        INFO("DeepSeekProvider initModel: endpoint = {}", _endpoint.c_str());   
         _isAvailable = true;
         return true;
     }
@@ -292,6 +292,18 @@ namespace ai_chat_sdk{
         };
         
         auto result = client.send(req);
+        if(!result)
+        {
+            // 请求发送失败，出现网络问题，比如DNS解析失败，请求超时
+            ERR("Network error: {}", to_string(result.error()));
+            return "";
+        }
+        //确保流式操作正常结束
+        if(!streamFinish)
+        {
+            WARN("DeepSeekProvider sendMessageStream: stream not finish");
+            callback("",true);
+        }
         return fullResponse;
     }
 

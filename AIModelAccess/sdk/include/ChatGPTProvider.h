@@ -8,7 +8,7 @@
 
 
 namespace ai_chat_sdk{
-    class DeepSeekProvider: public LLMProvider{
+    class ChatGPTProvider: public LLMProvider{
     public:
         virtual bool initModel(const std::map<std::string, std::string>& modelconfig);
         virtual std::string getModelName() const;
