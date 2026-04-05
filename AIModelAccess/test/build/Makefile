@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zzh/ai-model/ai-model-access/AIModelAccess/test
+CMAKE_SOURCE_DIR = /home/zzh/ai-model-access/AIModelAccess/test
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zzh/ai-model/ai-model-access/AIModelAccess/test/build
+CMAKE_BINARY_DIR = /home/zzh/ai-model-access/AIModelAccess/test/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zzh/ai-model/ai-model-access/AIModelAccess/test/build/CMakeFiles /home/zzh/ai-model/ai-model-access/AIModelAccess/test/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zzh/ai-model-access/AIModelAccess/test/build/CMakeFiles /home/zzh/ai-model-access/AIModelAccess/test/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zzh/ai-model/ai-model-access/AIModelAccess/test/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zzh/ai-model-access/AIModelAccess/test/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,53 +129,77 @@ testLLM/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testLLM.dir/build.make CMakeFiles/testLLM.dir/build
 .PHONY : testLLM/fast
 
-home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.o: home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp.o
-.PHONY : home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.o
+home/zzh/ai-model-access/AIModelAccess/sdk/src/ChatGPTProvider.o: home/zzh/ai-model-access/AIModelAccess/sdk/src/ChatGPTProvider.cpp.o
+.PHONY : home/zzh/ai-model-access/AIModelAccess/sdk/src/ChatGPTProvider.o
 
 # target to build an object file
-home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testLLM.dir/build.make CMakeFiles/testLLM.dir/home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp.o
-.PHONY : home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp.o
+home/zzh/ai-model-access/AIModelAccess/sdk/src/ChatGPTProvider.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testLLM.dir/build.make CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/ChatGPTProvider.cpp.o
+.PHONY : home/zzh/ai-model-access/AIModelAccess/sdk/src/ChatGPTProvider.cpp.o
 
-home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.i: home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp.i
-.PHONY : home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.i
+home/zzh/ai-model-access/AIModelAccess/sdk/src/ChatGPTProvider.i: home/zzh/ai-model-access/AIModelAccess/sdk/src/ChatGPTProvider.cpp.i
+.PHONY : home/zzh/ai-model-access/AIModelAccess/sdk/src/ChatGPTProvider.i
 
 # target to preprocess a source file
-home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testLLM.dir/build.make CMakeFiles/testLLM.dir/home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp.i
-.PHONY : home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp.i
+home/zzh/ai-model-access/AIModelAccess/sdk/src/ChatGPTProvider.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testLLM.dir/build.make CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/ChatGPTProvider.cpp.i
+.PHONY : home/zzh/ai-model-access/AIModelAccess/sdk/src/ChatGPTProvider.cpp.i
 
-home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.s: home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp.s
-.PHONY : home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.s
+home/zzh/ai-model-access/AIModelAccess/sdk/src/ChatGPTProvider.s: home/zzh/ai-model-access/AIModelAccess/sdk/src/ChatGPTProvider.cpp.s
+.PHONY : home/zzh/ai-model-access/AIModelAccess/sdk/src/ChatGPTProvider.s
 
 # target to generate assembly for a file
-home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testLLM.dir/build.make CMakeFiles/testLLM.dir/home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp.s
-.PHONY : home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp.s
+home/zzh/ai-model-access/AIModelAccess/sdk/src/ChatGPTProvider.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testLLM.dir/build.make CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/ChatGPTProvider.cpp.s
+.PHONY : home/zzh/ai-model-access/AIModelAccess/sdk/src/ChatGPTProvider.cpp.s
 
-home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/util/myLog.o: home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp.o
-.PHONY : home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/util/myLog.o
+home/zzh/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.o: home/zzh/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp.o
+.PHONY : home/zzh/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.o
 
 # target to build an object file
-home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testLLM.dir/build.make CMakeFiles/testLLM.dir/home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp.o
-.PHONY : home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp.o
+home/zzh/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testLLM.dir/build.make CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp.o
+.PHONY : home/zzh/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp.o
 
-home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/util/myLog.i: home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp.i
-.PHONY : home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/util/myLog.i
+home/zzh/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.i: home/zzh/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp.i
+.PHONY : home/zzh/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.i
 
 # target to preprocess a source file
-home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testLLM.dir/build.make CMakeFiles/testLLM.dir/home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp.i
-.PHONY : home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp.i
+home/zzh/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testLLM.dir/build.make CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp.i
+.PHONY : home/zzh/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp.i
 
-home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/util/myLog.s: home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp.s
-.PHONY : home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/util/myLog.s
+home/zzh/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.s: home/zzh/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp.s
+.PHONY : home/zzh/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.s
 
 # target to generate assembly for a file
-home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testLLM.dir/build.make CMakeFiles/testLLM.dir/home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp.s
-.PHONY : home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp.s
+home/zzh/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testLLM.dir/build.make CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp.s
+.PHONY : home/zzh/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp.s
+
+home/zzh/ai-model-access/AIModelAccess/sdk/src/util/myLog.o: home/zzh/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp.o
+.PHONY : home/zzh/ai-model-access/AIModelAccess/sdk/src/util/myLog.o
+
+# target to build an object file
+home/zzh/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testLLM.dir/build.make CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp.o
+.PHONY : home/zzh/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp.o
+
+home/zzh/ai-model-access/AIModelAccess/sdk/src/util/myLog.i: home/zzh/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp.i
+.PHONY : home/zzh/ai-model-access/AIModelAccess/sdk/src/util/myLog.i
+
+# target to preprocess a source file
+home/zzh/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testLLM.dir/build.make CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp.i
+.PHONY : home/zzh/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp.i
+
+home/zzh/ai-model-access/AIModelAccess/sdk/src/util/myLog.s: home/zzh/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp.s
+.PHONY : home/zzh/ai-model-access/AIModelAccess/sdk/src/util/myLog.s
+
+# target to generate assembly for a file
+home/zzh/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testLLM.dir/build.make CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp.s
+.PHONY : home/zzh/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp.s
 
 testLLM.o: testLLM.cpp.o
 .PHONY : testLLM.o
@@ -210,12 +234,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... testLLM"
-	@echo "... home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.o"
-	@echo "... home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.i"
-	@echo "... home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.s"
-	@echo "... home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/util/myLog.o"
-	@echo "... home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/util/myLog.i"
-	@echo "... home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/util/myLog.s"
+	@echo "... home/zzh/ai-model-access/AIModelAccess/sdk/src/ChatGPTProvider.o"
+	@echo "... home/zzh/ai-model-access/AIModelAccess/sdk/src/ChatGPTProvider.i"
+	@echo "... home/zzh/ai-model-access/AIModelAccess/sdk/src/ChatGPTProvider.s"
+	@echo "... home/zzh/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.o"
+	@echo "... home/zzh/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.i"
+	@echo "... home/zzh/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.s"
+	@echo "... home/zzh/ai-model-access/AIModelAccess/sdk/src/util/myLog.o"
+	@echo "... home/zzh/ai-model-access/AIModelAccess/sdk/src/util/myLog.i"
+	@echo "... home/zzh/ai-model-access/AIModelAccess/sdk/src/util/myLog.s"
 	@echo "... testLLM.o"
 	@echo "... testLLM.i"
 	@echo "... testLLM.s"

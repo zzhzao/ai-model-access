@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zzh/ai-model/ai-model-access/AIModelAccess/test
+CMAKE_SOURCE_DIR = /home/zzh/ai-model-access/AIModelAccess/test
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zzh/ai-model/ai-model-access/AIModelAccess/test/build
+CMAKE_BINARY_DIR = /home/zzh/ai-model-access/AIModelAccess/test/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/testLLM.dir/depend.make
@@ -70,64 +70,80 @@ include CMakeFiles/testLLM.dir/progress.make
 include CMakeFiles/testLLM.dir/flags.make
 
 CMakeFiles/testLLM.dir/testLLM.cpp.o: CMakeFiles/testLLM.dir/flags.make
-CMakeFiles/testLLM.dir/testLLM.cpp.o: /home/zzh/ai-model/ai-model-access/AIModelAccess/test/testLLM.cpp
+CMakeFiles/testLLM.dir/testLLM.cpp.o: /home/zzh/ai-model-access/AIModelAccess/test/testLLM.cpp
 CMakeFiles/testLLM.dir/testLLM.cpp.o: CMakeFiles/testLLM.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zzh/ai-model/ai-model-access/AIModelAccess/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/testLLM.dir/testLLM.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/testLLM.dir/testLLM.cpp.o -MF CMakeFiles/testLLM.dir/testLLM.cpp.o.d -o CMakeFiles/testLLM.dir/testLLM.cpp.o -c /home/zzh/ai-model/ai-model-access/AIModelAccess/test/testLLM.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zzh/ai-model-access/AIModelAccess/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/testLLM.dir/testLLM.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/testLLM.dir/testLLM.cpp.o -MF CMakeFiles/testLLM.dir/testLLM.cpp.o.d -o CMakeFiles/testLLM.dir/testLLM.cpp.o -c /home/zzh/ai-model-access/AIModelAccess/test/testLLM.cpp
 
 CMakeFiles/testLLM.dir/testLLM.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/testLLM.dir/testLLM.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zzh/ai-model/ai-model-access/AIModelAccess/test/testLLM.cpp > CMakeFiles/testLLM.dir/testLLM.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zzh/ai-model-access/AIModelAccess/test/testLLM.cpp > CMakeFiles/testLLM.dir/testLLM.cpp.i
 
 CMakeFiles/testLLM.dir/testLLM.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/testLLM.dir/testLLM.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zzh/ai-model/ai-model-access/AIModelAccess/test/testLLM.cpp -o CMakeFiles/testLLM.dir/testLLM.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zzh/ai-model-access/AIModelAccess/test/testLLM.cpp -o CMakeFiles/testLLM.dir/testLLM.cpp.s
 
-CMakeFiles/testLLM.dir/home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp.o: CMakeFiles/testLLM.dir/flags.make
-CMakeFiles/testLLM.dir/home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp.o: /home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp
-CMakeFiles/testLLM.dir/home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp.o: CMakeFiles/testLLM.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zzh/ai-model/ai-model-access/AIModelAccess/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/testLLM.dir/home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/testLLM.dir/home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp.o -MF CMakeFiles/testLLM.dir/home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp.o.d -o CMakeFiles/testLLM.dir/home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp.o -c /home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp
+CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp.o: CMakeFiles/testLLM.dir/flags.make
+CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp.o: /home/zzh/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp
+CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp.o: CMakeFiles/testLLM.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zzh/ai-model-access/AIModelAccess/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp.o -MF CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp.o.d -o CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp.o -c /home/zzh/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp
 
-CMakeFiles/testLLM.dir/home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/testLLM.dir/home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp > CMakeFiles/testLLM.dir/home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp.i
+CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zzh/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp > CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp.i
 
-CMakeFiles/testLLM.dir/home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/testLLM.dir/home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp -o CMakeFiles/testLLM.dir/home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp.s
+CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zzh/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp -o CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp.s
 
-CMakeFiles/testLLM.dir/home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp.o: CMakeFiles/testLLM.dir/flags.make
-CMakeFiles/testLLM.dir/home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp.o: /home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp
-CMakeFiles/testLLM.dir/home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp.o: CMakeFiles/testLLM.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zzh/ai-model/ai-model-access/AIModelAccess/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/testLLM.dir/home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/testLLM.dir/home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp.o -MF CMakeFiles/testLLM.dir/home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp.o.d -o CMakeFiles/testLLM.dir/home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp.o -c /home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp
+CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/ChatGPTProvider.cpp.o: CMakeFiles/testLLM.dir/flags.make
+CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/ChatGPTProvider.cpp.o: /home/zzh/ai-model-access/AIModelAccess/sdk/src/ChatGPTProvider.cpp
+CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/ChatGPTProvider.cpp.o: CMakeFiles/testLLM.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zzh/ai-model-access/AIModelAccess/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/ChatGPTProvider.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/ChatGPTProvider.cpp.o -MF CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/ChatGPTProvider.cpp.o.d -o CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/ChatGPTProvider.cpp.o -c /home/zzh/ai-model-access/AIModelAccess/sdk/src/ChatGPTProvider.cpp
 
-CMakeFiles/testLLM.dir/home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/testLLM.dir/home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp > CMakeFiles/testLLM.dir/home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp.i
+CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/ChatGPTProvider.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/ChatGPTProvider.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zzh/ai-model-access/AIModelAccess/sdk/src/ChatGPTProvider.cpp > CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/ChatGPTProvider.cpp.i
 
-CMakeFiles/testLLM.dir/home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/testLLM.dir/home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp -o CMakeFiles/testLLM.dir/home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp.s
+CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/ChatGPTProvider.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/ChatGPTProvider.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zzh/ai-model-access/AIModelAccess/sdk/src/ChatGPTProvider.cpp -o CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/ChatGPTProvider.cpp.s
+
+CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp.o: CMakeFiles/testLLM.dir/flags.make
+CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp.o: /home/zzh/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp
+CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp.o: CMakeFiles/testLLM.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zzh/ai-model-access/AIModelAccess/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp.o -MF CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp.o.d -o CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp.o -c /home/zzh/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp
+
+CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zzh/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp > CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp.i
+
+CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zzh/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp -o CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp.s
 
 # Object files for target testLLM
 testLLM_OBJECTS = \
 "CMakeFiles/testLLM.dir/testLLM.cpp.o" \
-"CMakeFiles/testLLM.dir/home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp.o" \
-"CMakeFiles/testLLM.dir/home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp.o"
+"CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp.o" \
+"CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/ChatGPTProvider.cpp.o" \
+"CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp.o"
 
 # External object files for target testLLM
 testLLM_EXTERNAL_OBJECTS =
 
 testLLM: CMakeFiles/testLLM.dir/testLLM.cpp.o
-testLLM: CMakeFiles/testLLM.dir/home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp.o
-testLLM: CMakeFiles/testLLM.dir/home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp.o
+testLLM: CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp.o
+testLLM: CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/ChatGPTProvider.cpp.o
+testLLM: CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp.o
 testLLM: CMakeFiles/testLLM.dir/build.make
 testLLM: /usr/lib/x86_64-linux-gnu/libssl.so
 testLLM: /usr/lib/x86_64-linux-gnu/libcrypto.so
 testLLM: CMakeFiles/testLLM.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/zzh/ai-model/ai-model-access/AIModelAccess/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable testLLM"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/zzh/ai-model-access/AIModelAccess/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable testLLM"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/testLLM.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -139,6 +155,6 @@ CMakeFiles/testLLM.dir/clean:
 .PHONY : CMakeFiles/testLLM.dir/clean
 
 CMakeFiles/testLLM.dir/depend:
-	cd /home/zzh/ai-model/ai-model-access/AIModelAccess/test/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zzh/ai-model/ai-model-access/AIModelAccess/test /home/zzh/ai-model/ai-model-access/AIModelAccess/test /home/zzh/ai-model/ai-model-access/AIModelAccess/test/build /home/zzh/ai-model/ai-model-access/AIModelAccess/test/build /home/zzh/ai-model/ai-model-access/AIModelAccess/test/build/CMakeFiles/testLLM.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/zzh/ai-model-access/AIModelAccess/test/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zzh/ai-model-access/AIModelAccess/test /home/zzh/ai-model-access/AIModelAccess/test /home/zzh/ai-model-access/AIModelAccess/test/build /home/zzh/ai-model-access/AIModelAccess/test/build /home/zzh/ai-model-access/AIModelAccess/test/build/CMakeFiles/testLLM.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/testLLM.dir/depend
 

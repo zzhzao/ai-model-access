@@ -8,9 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp" "CMakeFiles/testLLM.dir/home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp.o" "gcc" "CMakeFiles/testLLM.dir/home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp.o.d"
-  "/home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp" "CMakeFiles/testLLM.dir/home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp.o" "gcc" "CMakeFiles/testLLM.dir/home/zzh/ai-model/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp.o.d"
-  "/home/zzh/ai-model/ai-model-access/AIModelAccess/test/testLLM.cpp" "CMakeFiles/testLLM.dir/testLLM.cpp.o" "gcc" "CMakeFiles/testLLM.dir/testLLM.cpp.o.d"
+  "/home/zzh/ai-model-access/AIModelAccess/sdk/src/ChatGPTProvider.cpp" "CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/ChatGPTProvider.cpp.o" "gcc" "CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/ChatGPTProvider.cpp.o.d"
+  "/home/zzh/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp" "CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp.o" "gcc" "CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/DeepSeekProvider.cpp.o.d"
+  "/home/zzh/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp" "CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp.o" "gcc" "CMakeFiles/testLLM.dir/home/zzh/ai-model-access/AIModelAccess/sdk/src/util/myLog.cpp.o.d"
+  "/home/zzh/ai-model-access/AIModelAccess/test/testLLM.cpp" "CMakeFiles/testLLM.dir/testLLM.cpp.o" "gcc" "CMakeFiles/testLLM.dir/testLLM.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

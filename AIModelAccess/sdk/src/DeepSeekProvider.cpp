@@ -57,92 +57,89 @@ namespace ai_chat_sdk{
     }
     std::string DeepSeekProvider::sendMessage(const std::vector<Message>& messages,const std::map<std::string,std::string>& requestParam)
     {
-        if(!isAvailable())
-        {
-            ERR("DeepSeekProvider sendMessage: model not available");
+        // 1. 检测模型是否可用
+        if(!isAvailable()){
+            ERR("DeepSeekProvider sendMessage model not available");
             return "";
         }
-        // 构造请求参数
+
+        // 2. 构造请求参数
         double temperature = 0.7;
         int maxTokens = 2048;
-        if(requestParam.find("temperature") != requestParam.end())
-        {
+        if(requestParam.find("temperature") != requestParam.end()){
             temperature = std::stod(requestParam.at("temperature"));
         }
-        if(requestParam.find("maxTokens") != requestParam.end())
-        {
-            maxTokens = std::stoi(requestParam.at("maxTokens"));
+        if(requestParam.find("max_tokens") != requestParam.end()){
+            maxTokens = std::stoi(requestParam.at("max_tokens"));
         }
+
         // 构造历史消息
-        Json::Value historyMessages(Json::arrayValue);
-        for(const auto& message : messages)
-        {
-            Json::Value messageJson;
-            messageJson["role"] = message._role;
-            messageJson["content"] = message._content;
-            historyMessages.append(messageJson);
+        Json::Value messageArray(Json::arrayValue);
+        for(const auto& message : messages){
+            Json::Value messageObject;
+            messageObject["role"] = message._role;
+            messageObject["content"] = message._content;
+            messageArray.append(messageObject);
         }
-        //构造请求体
+
+        // 3. 构造请求体
         Json::Value requestBody;
         requestBody["model"] = getModelName();
-        requestBody["messages"] = historyMessages;
+        requestBody["messages"] = messageArray;
         requestBody["temperature"] = temperature;
         requestBody["max_tokens"] = maxTokens;
 
-        //序列化
+        // 4. 序列化
         Json::StreamWriterBuilder writerBuilder;
         writerBuilder["indentation"] = "";
         std::string requestBodyStr = Json::writeString(writerBuilder, requestBody);
-        INFO("DeepSeekProvider sendMessage: requestBody = {}", requestBodyStr.c_str());
+        INFO("DeepSeekProvider sendMessage requestBody: {}", requestBodyStr);
 
-        // 使用httplib构建HTTP客户端
+        // 5. 使用cpp-httplib库构造HTTP客户端
         httplib::Client client(_endpoint.c_str());
-        client.set_connection_timeout(30,0);
-        client.set_read_timeout(60,0);
+        client.set_connection_timeout(30, 0);     // 连接超时时间为30秒
+        client.set_read_timeout(60, 0);           // 设置超时时间为60秒
+
         // 设置请求头
         httplib::Headers headers = {
             {"Authorization", "Bearer " + _apiKey},
             {"Content-Type", "application/json"}
         };
- 
-        // 发送POST请求
-        auto res = client.Post("/v1/chat/completions", headers, requestBodyStr,"application/json");
-        if(res == nullptr)
-        {
-            ERR("DeepSeekProvider sendMessage: request failed");
+
+        // 6. 发送POST请求
+        auto response = client.Post("/v1/chat/completions", headers, requestBodyStr, "application/json");
+        if(!response){
+            ERR("DeepSeekProvider sendMessage POST request failed");
             return "";
         }
-        INFO("DeepSeekProvider sendMessage: responseStatus = {}", res->status);
+        INFO("DeepSeekProvider sendMessage POST request success, status : {}", response->status);
+        INFO("DeepSeekProvider sendMessage POST request success, body : {}", response->body);
 
-        INFO("DeepSeekProvider sendMessage: responseBody = {}", res->body.c_str());
-
-        if(res->status != 200)
-        {
-            ERR("DeepSeekProvider sendMessage: request failed, status = {}", res->status);
+        // 检测响应是否成功
+        if(response->status != 200){
             return "";
         }
-        // 解析响应体
-        Json::Value responseJson;
+
+        // 7. 解析响应体
+        Json::Value responseBody;
         Json::CharReaderBuilder readerBuilder;
         std::string parseError;
-        std::istringstream responseStream(res->body);
-        if(Json::parseFromStream(readerBuilder, responseStream, &responseJson, &parseError))
-        {
-            if(responseJson.isMember("choices")&& responseJson["choices"].size() > 0)
-            {
-                // 提取模型返回的消息内容
-                std::string modelResponse = responseJson["choices"][0]["message"]["content"].asString();
-                INFO("DeepSeekProvider sendMessage: modelResponse = {}", modelResponse.c_str());
-                return modelResponse;
-            }
-            else{
-                ERR("DeepSeekProvider sendMessage: responseJson not contain choices");
-                return "";
+        std::istringstream responseStream(response->body);
+        if(Json::parseFromStream(readerBuilder, responseStream, &responseBody, &parseError)){
+            // 获取message数组
+            if(responseBody.isMember("choices") && responseBody["choices"].isArray() && !responseBody["choices"].empty()){
+                auto choice = responseBody["choices"][0];
+                if(choice.isMember("message") && choice["message"].isMember("content")){
+                    std::string replyContent = choice["message"]["content"].asString();
+                    INFO("DeepSeekProvider response text: {}", replyContent);
+                    return replyContent;
+                }
             }
         }
- 
-            ERR("DeepSeekProvider sendMessage: parse response failed, error = {}", parseError.c_str());
-            return "";
+
+        // 8. json解析失败
+        ERR("DeepSeekProvider sendMessage POST response body parse failed, error");
+        return "deepseek response json parse failed";
 
     }
 
