@@ -3,7 +3,7 @@
 #include<string>
 #include<mutex>
 #include"common.h"
-
+#include<memory>
 
 
 namespace ai_chat_sdk{
@@ -26,6 +26,8 @@ class DataManager{
         std::vector<std::shared_ptr<Session>> getAllSessions() const;
         // 获取会话总数
         size_t getSessionCount() const;
+        // 清空所有会话
+        void clearAllSessions();
 
         // Message操作
         // 插入新消息 需要更新会话时间戳
@@ -36,7 +38,7 @@ class DataManager{
         bool deleteMessages(const std::string& sessionId);
     private: 
     // 初始化数据库 -- 创建数据库表
-    void initDatabase();
+    bool initDatabase();
     // 执行SQL语句
     bool executeSQL(const std::string& sql);
     

@@ -19,19 +19,23 @@ namespace ai_chat_sdk{
     
     //模型公共配置信息
      struct Config{
-        std::string _modelId;    //模型ID
+        std::string _modelName;       // 模型名称
         double _temperature = 0.7;     //温度
         int _maxTokens = 2048;        //最大token数
+
+        virtual ~Config() = default;    // 实现向下转型的安全性
      };
 
      // 通过API连接云端模型
      struct APIConfig: public Config{
         std::string _apiKey;    //API Key
      };
-     // 通过Ollama接入本地模型
-     struct OllamaConfig: public Config{
-        std::string _baseUrl;    //Ollama服务地址
-     };
+// 通过Ollama接入本地模型---不需要apikey
+   struct OllamaConfig : public Config{
+      std::string _modelName;       // 模型名称
+      std::string _modelDesc;       // 模型描述
+      std::string _endpoint;        // 模型API endpoint  base url
+   };
      // LLM信息
      struct ModelInfo{
         std::string _modelName;    //模型名称
