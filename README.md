@@ -1,7 +1,8 @@
 # LLMChat
 
 ## 项目框架
-![[Pasted image 20260415115249.png]]
+<img width="1362" height="769" alt="image" src="https://github.com/user-attachments/assets/ee675072-b2a1-4850-ba6b-0151380a3008" />
+
 ## ChatSDK
 ChatSDK是⼀款基于C++语⾔实现的大语言入库模型。
 ChatSDK实现了接入 deepseek-chat、gpt-4o-mini、gemini-2.0-flash类的云端大语言模型，以及⽀持Ollama本地接⼊deepseek-r1:1.5b模型。
